@@ -73,15 +73,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       )
-          : SingleChildScrollView(  // Wrap entire body in SingleChildScrollView
+          : SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              // Optional Additional Widgets (like Headers)
               GridView.builder(
-                shrinkWrap: true,  // Prevents GridView from taking up unnecessary space
-                physics: const NeverScrollableScrollPhysics(),  // Disables scroll within GridView
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   mainAxisSpacing: 10,

@@ -72,7 +72,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   void dispose() {
-    _controller.dispose(); // Clean up the controller
+    _controller.dispose();
     super.dispose();
   }
 
@@ -86,7 +86,7 @@ class _SplashScreenState extends State<SplashScreen>
           child: ScaleTransition(
             scale: _scaleAnimation,
             child: Image.asset(
-              'assets/splash_image.png', // Path to your logo or splash image
+              'assets/splash_image.png',
               width: 200,
               height: 200,
             ),
